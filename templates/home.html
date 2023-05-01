@@ -1,4 +1,24 @@
-<h1>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fish Weight Prediction</title>
+</head>
+<body>
+	<h1>Fish Weight Prediction Form</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+		<label for="length2">Length2:</label>
+		<input type="number" id="length2" name="length2" required><br><br>
+		
+		<label for="length3">Length3:</label>
+		<input type="number" id="length3" name="length3" required><br><br>
+		
+		<label for="width">Width:</label>
+		<input type="number" id="width" name="width" required><br><br>
+		
+		<input type="submit" value="Predict Weight">
+	</form>
 
-    Hello Mohamed Rezquellah
-</h1>
+</div>
+{{prediction_text}}
+</body>
+</html>
